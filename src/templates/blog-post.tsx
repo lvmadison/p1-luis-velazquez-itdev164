@@ -3,10 +3,10 @@ import { Link, graphql } from 'gatsby';
 import type { PageProps } from 'gatsby';
 
 // components
-import Hero from '../components/Hero/hero';
-import Layout from '../components/Layout/layout';
-import Seo from '../components/Seo/seo';
-import Tags from '../components/Tags/tags';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
+import Tags from '../components/Tags';
 
 // styled components
 import * as S from './styles';
