@@ -2,10 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
-import Seo from '../components/seo'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+import Seo from '../components/Seo/seo'
+import Layout from '../components/Layout/layout'
+import Hero from '../components/Hero/hero'
+import ArticlePreview from '../components/ArticlePreview/article-preview'
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allContentfulBlogPost.nodes;

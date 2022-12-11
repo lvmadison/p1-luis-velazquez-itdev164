@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+import Layout from '../components/Layout/layout'
+import Hero from '../components/Hero/hero'
+import ArticlePreview from '../components/ArticlePreview/article-preview'
 
 const Home = ({ data, location }: PageProps<GraphQLResult>) => {
 	const posts = data.allContentfulBlogPost.nodes;
