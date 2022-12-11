@@ -1,9 +1,10 @@
 # Project 1 - Contentful Gatsby Starter Blog 
+# Project Description:
 
  [Gatsby](http://gatsbyjs.com/) blog powered by [Contentful](https://www.contentful.com).
 
 
-## Features
+## Feature List:
 
 Contentful - content backend platform
 
