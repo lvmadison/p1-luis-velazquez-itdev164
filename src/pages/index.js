@@ -6,6 +6,21 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 
+const Home = ({ data, location }: PageProps<GraphQLResult>) => {
+	const posts = data.allContentfulBlogPost.nodes;
+	const [author] = data.allContentfulPerson.nodes;
+
+	return (
+		<Layout location={location}>
+			<Hero
+				image={author.heroImage.gatsbyImageData}
+				title={author.name}
+				content={author.shortBio.shortBio}
+			/>
+			<ArticlePreview posts={posts} />
+		</Layout>
+	);
+};
 class RootIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.nodes')

@@ -5,6 +5,16 @@ import './global.css'
 import Seo from './seo'
 import Navigation from './navigation'
 import Footer from './footer'
+
+const Layout = ({ children, location }) => {
+  return (
+    <>
+      <Seo />
+      <Navigation />
+      <main>{children}</main>
+    </>
+  );
+};
 class Template extends React.Component {
   render() {
     const { children } = this.props
